@@ -1,1 +1,52 @@
+1)2 sum
+2)Remove duplicates from sorted array
+3)Best Time to buy and sell stock
 
+
+ANS1---->
+class Solution {
+    public int[] twoSum(int[] nums, int target) {
+        HashMap<Integer,Integer> map=new HashMap<>();
+        for(int i=0;i<nums.length;i++){
+            if(map.containsKey(target-nums[i])){
+                return new int[]{i,map.get(target-nums[i])};
+                }
+                map.put(nums[i],i);
+            }
+
+        
+        return new int[]{-1,-1};
+    }
+}
+
+
+
+
+ANS2----->
+class Solution {
+    public int removeDuplicates(int[] nums) {
+        int i=0;
+        for(int j=1;j<nums.length;j++){
+            if(nums[j]!=nums[i]){
+                i++;
+                nums[i]=nums[j];
+            }
+        }
+        return i+1;
+    }
+}
+
+
+
+ANS3-------->
+class Solution {
+    public int maxProfit(int[] prices) {
+        int profit=0;
+          int leftSmall=prices[0];
+          for(int i=0;i<prices.length;i++){
+            profit=Math.max(profit,prices[i]-leftSmall);
+            leftSmall=Math.min(leftSmall,prices[i]);
+          }
+          return profit;
+    }
+}
