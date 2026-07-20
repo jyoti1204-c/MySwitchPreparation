@@ -5,9 +5,9 @@ WRITE ONCE RUN ANYWHERE ( Provided ability to execute the program on all machine
 JAVA is high level , object oriented , secure , robust , platform independent , WORA , Architecture neutral , Multithreaded , Exception handling
 , distributed , Automatic garbage collection
 
-JDK ---> JRE + JVM + Other Development tools( JDB - debugger , JAVAC - compiler ,jdoc - documentation , jar)
-JRE ----> It's a package that contains JVM + JAVA Libraries , it provides runtime env to run java code
-JVM ---> It executes the byte code , dont care about .java file , it only care about .class file (Bytecode)
+JDK ---> JRE + JVM + Other Development tools( JDB - debugger , JAVAC - compiler ,jdoc - documentation , jar) , JDK (Java Development Kit) is a software development kit used to develop, compile, debug, and run Java applications. It includes the Java compiler (javac), the JRE, the JVM, debugging tools, documentation tools, and other utilities required for Java development.
+JRE ----> It's a package that contains JVM + JAVA Libraries , it provides runtime env to run java code , It provides the runtime environment required to execute Java applications. It includes the JVM and the core Java libraries needed during execution.
+JVM ---> It executes the byte code , dont care about .java file , it only care about .class file (Bytecode), The JVM loads, verifies, and executes Java bytecode. Modern JVMs use an interpreter and a Just-In-Time (JIT) compiler to translate frequently executed bytecode into native machine code for better performance.
 Responsibilities of the JVM:
 Loads classes   ---> Classloader loads the class files into JVM , Without this JVM wont be able to know where are the classes exists
 Verifies bytecode ---> Bytecode Verifier (Before execution JVM checks (Is it valid , any corrupt data )
@@ -62,5 +62,13 @@ System ---> predefined Class in java lang package
 out --->public static field inside system class ,"Give me the standard output stream."
 println() is a method of PrintStream
 
+Heap
 
+Method Area
+
+Stack
+
+PC Register
+
+Native Method Stack
 
