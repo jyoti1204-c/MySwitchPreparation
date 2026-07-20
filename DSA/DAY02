@@ -1,0 +1,6 @@
+Duplicate 217----> 2 loops , sorting , hashset
+347 --> Top k frequent ele ---> LinkedhashMap sorting nlogn , priority queue nlogk || nlogn, bucket sort (stor counts as index and store value on those count indexes O(n)) 
+2 sum
+anagram
+128 --> longest consecutive sequence (sort , set)
+
