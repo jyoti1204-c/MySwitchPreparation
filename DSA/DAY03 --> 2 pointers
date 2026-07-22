@@ -4,3 +4,6 @@ Two sum if array is sorted
 Container with most water
 Remove duplicate ele ---> array should be in place
 Trapping rain water
+ 2 pointer
+
+remove leading zeroes
